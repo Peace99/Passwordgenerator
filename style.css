@@ -73,11 +73,20 @@ input[type='chckbox']{
 
 .btn-generate{
   border: none;
-  color: ;
+  color: black;
   cursor: pointer;
   font-size: 16px;
   padding: 8px 12px;
-  background-color: white;
+  background-color: #2c5f2d;;
+}
+
+#copyb{
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color:#2c5f2d;
 }
 
 .options{

@@ -5,7 +5,7 @@ const uppercase = document.getElementById("uppercase")
 const lowercase = document.getElementById("lowercase")
 const numbers = document.getElementById("numbers")
 const symbols = document.getElementById("characters")
-
+const copyPassword = document.getElementById("copyb")
 
 const funcs = {
 	lower: randomLower,
@@ -58,6 +58,32 @@ function generatePassword(upper, lower, number, symbol, length){
 
 	return final
 }
+
+copyPassword.addEventListener("click", function(){
+	const copyText = document.createElement("textarea")
+	const password = output.innerText
+	if (!password){
+		return
+	}
+
+	copyText.value = password
+	document.body.appendChild(copyText)
+	copyText.select()
+	document.execCommand("copy")
+	copyText.remove()
+	alert("password successfully copied")
+
+    let getLocalStorage = localStorage.getItem("New Passwords")
+	if (getLocalStorage === null){
+		store = []
+	}
+	else {
+		store = JSON.parse(getLocalStorage)
+	}
+	
+	store.push(output.innerText)
+	window.localStorage.setItem("New Passwords", JSON.stringify(store))
+})
 
 function randomUpper(){
  const capital = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
