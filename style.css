@@ -68,10 +68,10 @@ input[type='chckbox']{
     top: 5px;
     right: 5px;
     height: 40px;
-    width: 100px;
+    width: 55px;
 }
 
-.btn-generate{
+#btn{
   border: none;
   color: black;
   cursor: pointer;
@@ -85,7 +85,7 @@ input[type='chckbox']{
   color: black;
   cursor: pointer;
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   background-color:#2c5f2d;
 }
 

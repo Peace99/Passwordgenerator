@@ -100,6 +100,6 @@ function randomNumber(){
 }
 
 function randomSymbol(){
-	const sym = "'!@#$%^&*(){}:[],<>./?"
+	const sym = "!@#$%&*(){}[]<>/?"
 	return sym[Math.floor(Math.random() * sym.length)]
 }
